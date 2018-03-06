@@ -1,0 +1,78 @@
+<div class="container spacer">
+<div class="panel panel-primary" *ngIf="mode==1">
+<div class="panel-heading">New Administration</div>
+  <div class="panel-body">
+      <div >
+        <div class="form-group">
+          <label class="control-label">name:</label>
+          <input class="form-control" type="text" [(ngModel)]="administration.name">
+        </div>
+
+        <div class="form-group">
+          <label class="control-label">type:</label>
+          <input class="form-control" type="text" [(ngModel)]="administration.type">
+        </div>
+
+        <div class="form-group">
+          <label class="control-label">city:</label>
+          <input class="form-control" type="text" [(ngModel)]="administration.city">
+        </div>
+
+        <div class="form-group">
+          <label class="control-label">address:</label>
+          <input class="form-control" type="text" [(ngModel)]="administration.address">
+        </div>
+
+        <div class="form-group">
+          <label class="control-label">website:</label>
+          <input class="form-control" type="text" [(ngModel)]="administration.website">
+        </div>
+
+
+        <button class="btn btn-primary"  (click)="saveAdministration()">save</button>
+
+  </div>
+
+
+</div>
+</div>
+  <div class="panel panel-primary" *ngIf="mode==2">
+    <div class="panel-heading">Confirmation</div>
+    <div class="panel-body">
+      <div >
+        <div class="form-group">
+          <label class="control-label">id:</label>
+          <label>{{administration.id}}</label>
+        </div>
+        <div class="form-group">
+          <label class="control-label">name:</label>
+<label>{{administration.name}}</label>
+        </div>
+
+        <div class="form-group">
+          <label class="control-label">type:</label>
+          <label>{{administration.type}}</label>
+        </div>
+
+        <div class="form-group">
+          <label class="control-label">city:</label>
+          <label>{{administration.city}}</label>
+        </div>
+
+        <div class="form-group">
+          <label class="control-label">address:</label>
+          <label>{{administration.address}}</label>        </div>
+
+        <div class="form-group">
+          <label class="control-label">website:</label>
+          <label>{{administration.website}}</label>        </div>
+
+
+        <button class="btn btn-primary"  (click)="mode=1">New Administration</button>
+
+      </div>
+
+
+    </div>
+  </div>
+</div>
